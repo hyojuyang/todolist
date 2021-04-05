@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="todolist.js">
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Todo list</title>
+  </head>
+
+  <body>
+      <div id="container">
+        <h1>To DO</h1>
+        <header>
+          <input type="text" placeholder="Write here, let me remind you!" id="item"/>
+          <button id="add">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve">
+            <path d="M28,14H18V4c0-1.104-0.896-2-2-2s-2,0.896-2,2v10H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h10v10c0,1.104,0.896,2,2,2  s2-0.896,2-2V18h10c1.104,0,2-0.896,2-2S29.104,14,28,14z"/>
+          </svg>
+          </button>
+        </header>
+        <h2>To Do List</h2>
+        <ul class="todo" id="todo">
+        </ul>
+        <h2>Completed</h2>
+        <ul class="completed" id="completed"></ul>
+      </div>
+  </body>
+</html>

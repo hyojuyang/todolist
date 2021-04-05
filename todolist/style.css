@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+:root {
+  --font-color: #2d3436;
+  --fontlist-color:#fff5ee;
+  --body-bg-color:#ffe4c4;
+  --container-bg-color:#fff0f5;
+  --todo-bg-color:#fa8072;
+  --done-bg-color:#4682b4;
+  --svg-normal-color: #2d3436;
+  --svg-hover-color: #0984e3;
+  --svg-complete-color:#d8bfd8;
+  --svg-complete-hover-color:#ffe4e1;
+  --svg-remove-color:#00008b;
+  --svg-remove-hover-color:#87ceeb;
+}
+
+* {
+  font-family: 'Covered By Your Grace', cursive;
+  padding:0;
+  margin:0;
+  color:var(--font-color);
+}
+
+body{
+  background-color: var(--body-bg-color);
+  display:flex;
+  justify-content: center;
+}
+
+#container{
+  background-color: var(--container-bg-color);
+  padding: 2%;
+  min-height: 30vh;
+  min-width: 50vw;
+  width:auto;
+  height:auto;
+  margin-top: 10vh;
+  border-radius:5%;
+}
+
+h1{
+  text-align: center;
+  font-size: 5rem;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+h2{
+  font-size:2.5rem;
+  margin-bottom: 40px;
+  margin-top:40px;
+  display: inline-block;
+}
+
+h2::after{
+  content: "";
+  border-bottom: 5px solid black;
+  display: block;
+  width: auto;
+}
+
+
+header {
+  display:flex;
+  justify-content:space-between;
+}
+
+header input{
+  min-height: 40px;
+  width: 100%;
+  border: none;
+  padding-left: 5%;
+  background-color:var(--body-bg-color);
+  font-size: 1.5rem;
+}
+
+header button{
+  min-width: 40px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+
+li {
+  color: var(--fontlist-color);
+  font-size: 1.5rem;
+  width:100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--todo-bg-color);
+  padding: 2%;
+  box-sizing: border-box;
+  border-radius:10px;
+  margin-bottom: 20px;
+}
+
+li.buttons {
+  min-width: 100px;
+  display:inline;
+}
+
+li .buttons button {
+  background: none;
+  min-width: 40px;
+  border: none;
+  font-size:2rem;
+
+}
+
+.completed li{
+  background-color: var(--done-bg-color);
+}
+.completed .complete svg path{
+  fill: var(--svg-complete-color);
+}
+svg {
+  max-width: 20px;
+}
+
+svg path{
+  fill: var(--svg-normal-color);
+
+}
+
+button:hover svg path {
+  fill: var(--svg-hover-color);
+}
+
+
+.remove svg path {
+  fill:var(--svg-remove-color);
+}
+.remove:hover svg path{
+  fill: var(--svg-remove-hover-color);
+
+}
+@media screen and (max-width: 600px){
+  header input{
+    font-size: 1rem;
+  }
+}
